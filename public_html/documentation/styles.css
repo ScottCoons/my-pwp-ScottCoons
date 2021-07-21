@@ -1,0 +1,15 @@
+body {
+    font-family: Georgia, Tahoma;
+}
+
+.container {
+    display:flex;
+}
+.row {
+    ;
+    padding:9px;
+    background-color:#999999;
+    margin:1px;
+}
+
+
