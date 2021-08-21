@@ -12,3 +12,41 @@
 .icons {
     height:15px;
 }
+
+.tabs {
+    border: 1px solid #999999;
+}
+
+.tabs__sidebar {
+    font-family: helvetica, arial, sans-serif;
+    font-size:19px;
+}
+
+.tabs__menu {
+    display:inline-block;
+}
+
+.tabs__button {
+    display:inline-block;
+    padding:9px;
+}
+
+.tabs__button:hover: {
+    background-color:#66cc33;
+}
+
+.tabs__button:active: {
+    border-bottom: 2px solid green;
+}
+
+.tabs__button--active {
+    border-bottom: 2px solid green;
+}
+
+.tabs__content  {
+    display:none;
+}
+
+.tabs__content--active {
+    display:inline-block;
+}
