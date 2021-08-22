@@ -8,8 +8,17 @@
 
                 const tabNumber = button.dataset.forTab;
 
-                const tabToActivate = document.querySelector(`.tabs__content[data-tab=“${tabNumber}”]`)
+                // const tabToActivate = document.querySelector(`.tabs__content[data-tab=“${tabNumber}”]`)
 
+                let tabToActivate;
+//const tabToActivate = document.querySelector(`.tabs__content[data-tab=${tabNumber}]`)
+                if(tabNumber === "1") {
+                    tabToActivate = document.getElementById("homeTab");
+                } else if (tabNumber === "2") {
+                    tabToActivate = document.getElementById("portfolioTab");
+                } else if (tabNumber === "3") {
+                    tabToActivate = document.getElementById("formTab");
+                }
 
                 // const tabToActivate = tabsContainer.querySelector(`.tabs__content[data-tab="${tabNumber}"]`);
 
