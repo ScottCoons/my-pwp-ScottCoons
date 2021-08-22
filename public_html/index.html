@@ -7,83 +7,123 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
 
-<!--Main container-->
+<!--MAIN CONTAINER-->
 
 <section class="container-lg">
 
-<!--HEADER-->
-        <div class="tabs d-flex">
-            <div class="col-5 ">
-                <img src="images/cd_logo.png" alt="Coons Design logo" width="106px" height="122px">
+    <!--HEADER-->
+        <div class="tabs d-flex ms-auto position-relative">
+            <!--LOGO-->
+            <div class="col-5">
+                <a href="index.html"><img src="images/cd_logo.png" alt="Coons Design logo" width="106px" height="122px"></a>
             </div>
-            <div class="col-7 tabs__menu">
+            <!--NAVIGATION BUTTONS-->
+            <div class="col-7 tabs__menu position-absolute top-50 start-100 translate-middle">
                 <button class="tabs__button" data-for-tab="1">HOME</button>
                 <button class="tabs__button" data-for-tab="2">PORTFOLIO</button>
                 <button class="tabs__button" data-for-tab="3">CONTACT</button>
-            </div>
-        </div>
 
-        <div class=tabs__content" data-tab="1">
-            <div class="d-flex flex-row bd-highlight mb-3">
-                <div class="col-5">
-                    <h5 class="green"><strong>Welcome</strong></h5>
-                    <p>This is the online presence of Full-Stack Web Developer and Visual Designer Scott Coons.  Having designed for just about every medium that exists including website, print, packaging, film, video, outdoor, and trade show, Scott is ready to work for you.</p>
-                    <p>In addition to visual design, Scott has written a novel, executed the engineering for several products, and is a long time musician.</p>
-                </div>
+                <!--SOCIAL ICONS-->
+                <a href="https://github.com/ScottCoons" target="_blank">
+                    <img src="./images/GItHub-logo-gray.png" class="icons" alt="GitHub icon">
+                </a>
 
-                <div class="col-7">
-                    <img src="images/VLAatNight-txt.png" class="img-fluid" alt="VLA at night" />
-                </div>
+                 <a href="https://www.linkedin.com/in/scott-coons-4390427/" target="_blank">
+                     <img src="./images/LinkedIn-logo-gray.png" class="icons" alt="LinkedIn icon">
+                 </a>
 
             </div>
         </div>
 
-        <div class=tabs__content" data-tab="2">
-            <div class="d-flex flex-row bd-highlight mb-3">
-                <div class="col-5 order-xs-2 order-sm-2 order-md-1 order-lg-1 left-77">
-                    <h5 class="green"><strong>Portfolio</strong></h5>
-                    <p>For your consideration, a curated collection of work.</p>
-                </div>
+    <!--MAIN CONTENT BODY-->
+       <!--CONTENT WELCOME-->
+            <div class="tabs__content" data-tab="1">
+                <div class="d-flex flex-row">
+                    <div class="col-5 left-52">
+                        <h5 class="green"><strong>Welcome</strong></h5>
+                        <p>This is the online presence of Full-Stack Web Developer and Visual Designer Scott Coons.  Having designed for just about every medium that exists including website, print, packaging, film, video, outdoor, and trade show, Scott is ready to work for you.</p>
+                        <p>In addition to visual design, Scott has written a novel, executed the engineering for several products, and is a long time musician.</p>
+                    </div>
 
-                <div class="col-7 order-xs-1 order-sm-1 order-md-2 order-lg-2">
-                    <img src="images/placeholderPortfolio.png" class="img-fluid" alt="portfolio" />
+                    <div class="col-7">
+                        <img src="images/VLAatNight-txt.png" class="img-fluid" alt="VLA at night" />
+                    </div>
+
                 </div>
+            </div>
+
+        <!--CONTENT PORTFOLIO-->
+            <div class="tabs__content" data-tab="2">
+                <div class="d-flex flex-row col-5">
+                    <div class="left-52">
+                        <h5 class="green"><strong>Portfolio</strong></h5>
+                        <p>For your consideration, a curated collection of work.</p>
+                    </div>
+                </div>
+                <div class="d-flex col-7">
+                    <div>
+                        <img src="./images/portfolio/portWebDev_1.png" class="slide-1">
+                        <img src="./images/portfolio/portWebDev_2.png" class="slide-2">
+                        <img src="./images/portfolio/portWebDev_3.png" class="slide-3">
+                        <img src="./images/portfolio/portWebDev_4.png" class="slide-4">
+                        <img src="./images/portfolio/portIdentity_1.png" class="slide-5">
+                        <img src="./images/portfolio/portIdentity_2.png" class="slide-6">
+                        <img src="./images/portfolio/portIdentity_3.png" class="slide-7">
+                        <img src="./images/portfolio/portPhoto_1.png" class="slide-8">
+                        <img src="./images/portfolio/portPhoto_2.png" class="slide-9">
+            <!-- <img src="images/placeholderPortfolio.png" class="img-fluid" alt="portfolio" />-->
+                    </div>
+
+                </div>
+            </div>
+
+        <!--CONTENT CONTACT FORM-->
+            <div class="tabs__content" data-tab="3">
+
+                    <div class="col-5 left-52">
+                        <h5 class="green"><strong>Contact</strong></h5>
+                        <p>Drop me a note if you have a project you’d like me to consider, or want to talk about a more permanent arrangement. I look forward to hearing from you.</p>
+                    </div>
+
+                    <div class="col-7">
+                    <form>
+                        <div class="form-group">
+                            <label for="InputName">Full Name</label>
+                            <input type="email" class="form-control" id="InputName" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPhone">Phone Number</label>
+                            <input type="email" class="form-control" id="InputPhone" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="InputMessage">Message</label>
+                            <textarea class="form-control" id="InputMessage" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mt-1">Submit</button>
+                    </form>
+                    </div>
 
             </div>
 
+</section>
 
 
-            <div class="col-7 order-xs-1 order-sm-1 order-md-2 order-lg-2">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-                <form>
-                    <div class="form-group">
-                        <label for="InputName">Full Name</label>
-                        <input type="email" class="form-control" id="InputName" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group">
-                        <label for="InputEmail">Email address</label>
-                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group">
-                        <label for="InputPhone">Phone Number</label>
-                        <input type="email" class="form-control" id="InputPhone" aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="InputMessage">Message</label>
-                        <textarea class="form-control" id="InputMessage" rows="3"></textarea>
-                    </div>
-
-
-                    <button type="submit" class="btn btn-primary mt-1">Submit</button>
-                </form>
-
-            </div>
-
+</body>
+</html>
 
 
 
@@ -134,47 +174,11 @@
 <!--        </div>-->
 <!--END MENU-->
 
-<!--MAIN CONTENT BODY-->
-
-
-
-        <div class="d-flex flex-row bd-highlight mb-3">
-            <div class="col-5 order-xs-2 order-sm-2 order-md-1 order-lg-1 left-77">
-                <h5 class="green"><strong>Welcome</strong></h5>
-                <p>This is the online presence of Full-Stack Web Developer and Visual Designer Scott Coons.  Having designed for just about every visual medium that exists including website, print, packaging, film, video, outdoor, and trade show, Scott is ready to work for you.</p>
-                <p>In addition to visual design, Scott has written a novel, executed the engineering for several products, and is a long time musician.</p>
-            </div>
-
-            <div class="col-7 order-xs-1 order-sm-1 order-md-2 order-lg-2">
-                <img src="images/VLAatNight-txt.png" class="img-fluid" alt="VLA at night" />
-            </div>
-
-        </div>
 
 
 
 
-    <div style="display:none">
-        <div class="d-flex flex-row bd-highlight mb-3">
-            <div class="col-5 order-xs-2 order-sm-2 order-md-1 order-lg-1 left-77">
-                <h5 class="green"><strong>Portfolio</strong></h5>
-                <p>For your consideration, a curated collection of work.</p>
-            </div>
-
-            <div class="col-7 order-xs-1 order-sm-1 order-md-2 order-lg-2">
-                <img src="images/placeholderPortfolio.png" class="img-fluid" alt="portfolio" />
-            </div>
-
-        </div>
-    </div>
 
 
 
-</section>
 
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-</body>
-</html>
