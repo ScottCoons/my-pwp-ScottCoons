@@ -9,9 +9,10 @@
                 const tabNumber = button.dataset.forTab;
 
                 // const tabToActivate = document.querySelector(`.tabs__content[data-tab=“${tabNumber}”]`)
+                //const tabToActivate = document.querySelector(`.tabs__content[data-tab=${tabNumber}]`)
 
                 let tabToActivate;
-//const tabToActivate = document.querySelector(`.tabs__content[data-tab=${tabNumber}]`)
+
                 if(tabNumber === "1") {
                     tabToActivate = document.getElementById("homeTab");
                 } else if (tabNumber === "2") {
