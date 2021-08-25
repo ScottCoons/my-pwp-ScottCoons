@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Coons Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -23,27 +25,25 @@
                 <a href="index.html"><img src="images/cd_logo.png" alt="Coons Design logo" width="106px" height="122px"></a>
             </div>
             <!--NAVIGATION BUTTONS-->
+
+
             <div class="col-7 tabs__menu position-absolute top-50 start-100 translate-middle">
                 <button class="tabs__button" data-for-tab="1">HOME</button>
                 <button class="tabs__button" data-for-tab="2">PORTFOLIO</button>
                 <button class="tabs__button" data-for-tab="3">CONTACT</button>
 
                 <!--SOCIAL ICONS-->
-                <a href="https://github.com/ScottCoons" target="_blank">
-                    <img src="./images/GItHub-logo-gray.png" class="icons" alt="GitHub icon">
-                </a>
-
-                 <a href="https://www.linkedin.com/in/scott-coons-4390427/" target="_blank">
-                     <img src="./images/LinkedIn-logo-gray.png" class="icons" alt="LinkedIn icon">
-                 </a>
+                <a href="https://github.com/ScottCoons" target="_blank"><img src="images/GItHub-logo-gray.png" class="icons" alt="GitHub icon"></a>
+                <a href="https://www.linkedin.com/in/scott-coons-4390427/" target="_blank"><img src="images/LinkedIn-logo-gray.png" class="icons" alt="LinkedIn icon"></a>
+            </div>
 
             </div>
-        </div>
+
 
     <!--MAIN CONTENT BODY-->
        <!--CONTENT WELCOME-->
-            <div id="homeTab" class="tabs__content" data-tab="1">
-                <div class="d-flex flex-row">
+            <div id="homeTab" class="tabs__content container-fluid" data-tab="1">
+                <div class="row">
                     <div class="col-5 left-52">
                         <h5 class="green"><strong>Welcome</strong></h5>
                         <p>This is the online presence of Full-Stack Web Developer and Visual Designer Scott Coons.  Having designed for just about every medium that exists including website, print, packaging, film, video, outdoor, and trade show, Scott is ready to work for you.</p>
@@ -59,61 +59,65 @@
 
         <!--CONTENT PORTFOLIO-->
 
-            <div id="portfolioTab" class="tabs__content" data-tab="2">
-                <div class="d-flex flex-row">
+            <div id="portfolioTab" class="tabs__content container-fluid" data-tab="2">
+                <div class="d-flex row">
                     <div class="col-5 left-52">
                         <h5 class="green"><strong>Portfolio</strong></h5>
                         <p>For your consideration, a curated collection of work.</p>
                     </div>
-                </div>
-                <div class="col-7 img-fluid">
-                    <div>
-                        <img src="./images/portfolio/portWebDev_1.png" alt="Web Development" class="slide-1">
-                        <img src="./images/portfolio/portWebDev_2.png" alt="Web Development" class="slide-2">
-                        <img src="./images/portfolio/portWebDev_3.png" alt="Web Development" class="slide-3">
-                        <img src="./images/portfolio/portWebDev_4.png" alt="Web Development" class="slide-4">
-                        <img src="./images/portfolio/portIdentity_1.png" alt="Web Development" class="slide-5">
-                        <img src="./images/portfolio/portIdentity_2.png" alt="Web Development" class="slide-6">
-                        <img src="./images/portfolio/portIdentity_3.png" alt="Web Development" class="slide-7">
-                        <img src="./images/portfolio/portPhoto_1.png" alt="Web Development" class="slide-8">
-                        <img src="./images/portfolio/portPhoto_2.png" alt="Web Development" class="slide-9">
+                    <div class="col-7 ms-auto image-fluid">
+                        <div id="fader">
+                            <img src="./images/portfolio/portWebDev_1.png" alt="Web Development" class="slide-1">
+                            <img src="./images/portfolio/portWebDev_2.png" alt="Web Development" class="slide-2">
+                            <img src="./images/portfolio/portWebDev_3.png" alt="Web Development" class="slide-3">
+                            <img src="./images/portfolio/portWebDev_4.png" alt="Web Development" class="slide-4">
+                            <img src="./images/portfolio/portIdentity_1.png" alt="Web Development" class="slide-5">
+                            <img src="./images/portfolio/portIdentity_2.png" alt="Web Development" class="slide-6">
+                            <img src="./images/portfolio/portIdentity_3.png" alt="Web Development" class="slide-7">
+                            <img src="./images/portfolio/portPhoto_1.png" alt="Web Development" class="slide-8">
+                            <img src="./images/portfolio/portPhoto_2.png" alt="Web Development" class="slide-9">
+                        </div>
                     </div>
-
                 </div>
             </div>
-
         <!--CONTENT CONTACT FORM-->
-            <div id="formTab" class="tabs__content" data-tab="3">
-
+            <div id="formTab" class="tabs__content container-fluid" data-tab="3">
+                <div class="d-flex row">
                     <div class="col-5 left-52">
                         <h5 class="green"><strong>Contact</strong></h5>
                         <p>Drop me a note if you have a project you’d like me to consider, or want to talk about a more permanent arrangement. I look forward to hearing from you.</p>
                     </div>
 
                     <div class="col-7">
-                    <form>
+                        <form id="contact" action="./apis/" method="post" novalidate>
                         <div class="form-group">
-                            <label for="InputName">Full Name</label>
-                            <input type="email" class="form-control" id="InputName" aria-describedby="emailHelp">
+
+                            <input placeholder="Name" eholder="Name" type="text" name="name" class="form-control" id="InputName" aria-describedby="nameHelp">
                         </div>
                         <div class="form-group">
-                            <label for="InputEmail">Email address</label>
-                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+
+                            <input placeholder="Email" type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="InputPhone">Phone Number</label>
-                            <input type="email" class="form-control" id="InputPhone" aria-describedby="emailHelp">
+
+                            <input placeholder="Subject" type="text" name="subject" label="Subject" class="form-control" id="InputSubject" aria-describedby="subjectHelp">
                         </div>
 
                         <div class="form-group">
-                            <label for="InputMessage">Message</label>
-                            <textarea class="form-control" id="InputMessage" rows="3"></textarea>
+                            <textarea placeholder="Message" name="message" class="form-control" id="InputMessage" rows="3"></textarea>
                         </div>
+                            <div>
+                                <div class="g-recaptcha" data-sitekey="6Le8PSAcAAAAAC5U6Z4iQojSuo-udXWy4JnoIBuT">
+                                </div>
 
+                            </div>
                         <button type="submit" class="btn btn-primary mt-1">Submit</button>
+                        <button type="reset" class="btn btn-light mt-1">Reset</button>
                     </form>
-                    </div>
 
+                    </div>
+                    <div id="output-area"></div>
+                </div>
             </div>
 
 </section>
@@ -121,6 +125,21 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<script src="script.js"></script>
+
+<script src="tabs-script.js"></script>
+
 
 </body>
 </html>

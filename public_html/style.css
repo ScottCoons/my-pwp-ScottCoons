@@ -77,16 +77,32 @@ p, ul, ol, li {
     display:inline-block;
 }
 
+#InputName, #InputEmail, #InputSubject, #InputMessage {
+    background-color: #ffecc8;
+    border:0;
+    margin-bottom: 2px;
+    font-size:13px;
+    color:black;
+}
+
+.g-recaptcha {
+        margin-top:12px;
+    }
+
 
 /*FADER FUNCTIONALITY*/
 
-* {
+#fader {
     margin: 0;
     padding: 0;
+    position:relative;
 }
 
 .slide-1, .slide-2, .slide-3, .slide-4, .slide-5, .slide-6, .slide-7, .slide-8, .slide-9 {
     display: block;
+    position: absolute;
+    left:0;
+    top:0;
 }
 
 .slide-1 {
@@ -233,57 +249,5 @@ p, ul, ol, li {
     88%{opacity: 0;}
     100%{opacity: 1;}
 }
-
-
-
-
-/*#slider {*/
-/*    overflow: hidden;*/
-/*}*/
-/*#slider figure {*/
-/*    position: relative;*/
-/*    width: 500%*/
-/*    margin: 0;*/
-/*    left: 0;*/
-/*    animation 20s slider infinite;*/
-/*}*/
-
-/*#slider figure img {*/
-/*    width: 20%;*/
-/*    float: left;*/
-/*}*/
-
-/*@keyframes slider {*/
-/*    0% {*/
-/*        left: 0;*/
-/*    }*/
-/*    20% {*/
-/*        left: 0;*/
-/*    }*/
-/*    25% {*/
-/*        left: -100%;*/
-/*    }*/
-/*    45% {*/
-/*        left: -200%;*/
-/*    }*/
-/*    70% {*/
-/*        left: -200;*/
-/*    }*/
-/*    50% {*/
-/*        left: -200;*/
-/*    }*/
-/*    70% {*/
-/*        left: -200;*/
-/*    }*/
-/*    75% {*/
-/*        left: -200;*/
-/*    }*/
-/*    95% {*/
-/*        left: -300;*/
-/*    }*/
-/*    100% {*/
-/*        left: -400;*/
-/*    }*/
-/*}*/
 
 
